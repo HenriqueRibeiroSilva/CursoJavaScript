@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade.com</title>
+    <style>
+        h1{
+            font: normal 25pt arial;
+        }
+        body{
+            font: normal 18pt arial;
+            margin: 20px;
+        }
+        div{
+            font: normal 14pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificador de nacionalidade</h1>
+    Voce nasceu em <input type="text" name="txtnacio" id="txtnacio">
+    <input type="button" value="Verificar" id="Verificar" onclick="verificar()">
+    <div id="res">Nacionalidade:</div>
+    <script>
+        function verificar() {
+            var txtnacio = document.getElementById("txtnacio")
+            var res = document.getElementById("res")
+            txtnaci = String(txtnacio.value)
+            if (txtnaci == "Brasil") {
+                res.innerHTML += ` Brasileiro!`
+            }
+            else{
+                res.innerHTML += ` Estrangeiro!`
+            }
+        }
+    </script>
+</body>
+</html>

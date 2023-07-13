@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro passos com DOM</title>
+    <Style>
+        body{
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font: normal 12pt arial;
+        }
+        h1{
+            color: black;
+        }
+    </Style>
+</head>
+<body>
+    <h1>Iniciando os estudos com DOM.</h1>
+    <p id="Status">Status</p>
+    <!-- <p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Click em mim</div> -->
+    <Script>
+        // var p1 = document.getElementsByTagName("p")[0]
+        // document.write(p1.innerHTML)
+        // var d = document.getElementById("msg")
+        // d.style.color = "green"
+        // document.write(d.innerHTML)
+        var nome = prompt("Qual é seu nome:")
+        var res = prompt('Voce é maior de idade?')
+        if (res=="Não") { alert('Cadastro inválidado!')
+        document.write(`Pedimos desculpa ${nome}, não podemos concluir seu cadastro!`)} 
+        else {document.write(`Bem-vindo ${nome}, ao meu site!`)
+        document.getElementById("Status").style.color="White"
+        document.getElementById("Status")
+        document.getElementById("Status").style.background="green"}
+    </Script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAM.GOV</title>
+    <style>
+        body{
+            font: normal 18pt arial;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro <input type="number" name="txtvel" id="txtvel"> Km/h;
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar() {
+            var txtvel= document.querySelector("input#txtvel")
+            var res= document.getElementById("res")
+            var vel = Number(txtvel.value)
+            res.innerHTML = `<p>Sua velocidade atual é <strong>${vel}</strong>Km/h.`
+            if (vel>60) {
+                res.innerHTML += `<p>Voce está <strong>MULTADO</strong> por excesso de velocidade!</p>`
+            } else if(vel<30){
+                res.innerHTML += `<p>Você está abaixo da velocidade minima permitida!</p>`
+            } else{
+                res.innerHTML += `<p>Velocidade dentro do aceitavel, dirija com cuidado!</p>`
+            }
+        }     
+    </script>
+</body>
+</html>

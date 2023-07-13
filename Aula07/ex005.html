@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu primeiro programa</title>
+        <style>
+            body{
+                background-color: rgb(70, 69, 69);
+                font: normal 18pt arial; /*Comentario em CSS*/
+                color: black;
+            }
+            h1{
+                color: rgb(63, 63, 248);
+            }
+        </style>
+    </head>
+    <body>
+        
+        <script>
+            var nome=prompt("Infome seu nome")
+            var idade = prompt('Informe sua idade')
+                while(idade<18)
+                {
+                    alert("Usuário menor de idade, o cadastro não pode ser concluido!")
+                    idade = prompt('Informe uma idade maior ou igual a 18')
+                }
+                alert(`Obrigado ${nome}, cadastro concluido com sucesso!`)
+            //alert(`Olá ${nome.toLocaleUpperCase()}, seu nome tem ${nome.length} letras.`)
+            // var n1 = Number(window.prompt("Digite um numero:")) //Comentário em JS
+            // var n2 = Number(window.prompt("Digite outro numero:"))
+            // var soma = (n1+n2)
+            // alert(`A soma entre ${n1} e ${n2} é iqual a:  ${soma}`)
+        </script>
+        <h1>
+            Olá, seja bem vindo!
+        </h1>
+        <p>
+            Esse é um site ainda em fase de teste.
+        </p>
+    </body>
+</html>
